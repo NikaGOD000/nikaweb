@@ -1,58 +1,123 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font dan warna dasar */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  background: #f7f7f7;
-  color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
+/* Header */
 header {
-  background-color: #222;
-  color: #fff;
-  padding: 15px 20px;
-  font-size: 1.5em;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo {
-  font-weight: bold;
+header .logo h1 {
+    margin: 0;
 }
 
-main {
-  padding: 20px;
+nav ul {
+    list-style: none;
+    display: flex;
 }
 
-.game-list h2 {
-  margin-bottom: 10px;
+nav ul li {
+    margin: 0 15px;
 }
 
-.games {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-.game-card {
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  text-align: center;
-  width: 150px;
-  cursor: pointer;
-  transition: transform 0.2s;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-.game-card:hover {
-  transform: scale(1.05);
+/* Bagian Tentang Saya */
+section {
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.game-card img {
-  width: 100%;
-  height: auto;
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
+section p {
+    font-size: 1.2em;
+}
+
+/* Keahlian */
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Proyek */
+#projects .project-item {
+    display: inline-block;
+    width: 45%;
+    margin: 20px 2.5%;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#projects .project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#projects .project-item h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+/* Kontak */
+#contact p {
+    font-size: 1.2em;
+}
+
+#contact a {
+    color: #333;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
-  text-align: center;
-  padding: 15px;
-  background: #eee;
-  margin-top: 40px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
 }
